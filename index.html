@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CPP POST números</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        h1 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            color: #5a5a5a;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            font-weight: bold;
+            color: #d3d3d3; /* Color gris claro */
+            margin-bottom: 0;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .btn {
+            height: 40px;
+            margin: 0 5px;
+            border: 1px solid #5a5a5a;
+            padding: 0 40px; /* Aumenta el padding para alargar los botones */
+        }
+        #resultado {
+            margin-bottom: 10px; /* Añadir margen abajo para separar del campo de texto */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="container">
+        <h1 class="text-center">Registro de números</h1>
+    </header>
+
+    <main class="container">
+        <form id="registroNumero" class="w-50 m-auto">
+            <div id="resultado" class="m-2 pt-4"></div>
+            <input type="text" id="numero" class="form-control m-2" placeholder="nuevo numero" required>
+            <div class="btn-container">
+                <input type="submit" class="btn btn-primary" value="Añadir">
+                <input type="button" id="resetearBtn" class="btn btn-primary" value="Resetear">
+            </div>
+        </form>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js?b"></script>
+</body>
+</html>
